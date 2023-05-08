@@ -6,7 +6,7 @@
         jointWaitlistInput.focus()
     })
 
-    $(".preloader").fadeOut(5000);
+    $(".preloader").fadeOut(1500);
   
     $("#owl-testimonials").owlCarousel({ 
        items: 2,
