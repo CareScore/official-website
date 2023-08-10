@@ -68,10 +68,12 @@ function toTop() {
 
 // video popup
 
+
+
 $('.play-video').on('click', function(e){
     e.preventDefault();
     $('#video-overlay').addClass('open');
-    $("#video-overlay").append('<iframe class="videoPopup" src="https://player.vimeo.com/video/817872782?h=5a2153fc80" frameborder="0" allowfullscreen></iframe>');
+    $("#video-overlay").append('<iframe class="videoPopup" src="https://player.vimeo.com/video/851642470?h=5a2153fc80" frameborder="0" allowfullscreen></iframe>');
   });
   
   $('.video-overlay, .video-overlay-close').on('click', function(e){
