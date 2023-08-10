@@ -427,7 +427,8 @@ header{
             color: #1877F2;
             font-weight: 600;
             font-size: 14px;
-            display: flex;
+            display: flex; 
+            align-items: center;
             gap: 4px;
         } 
         &.ItemSelected{
@@ -450,15 +451,59 @@ header{
 }
 .sec-third{ 
     padding: 60px 0px;
-    @include checked-list-items; 
     .sub-title{
-        @include text-gradient;
-        text-transform: uppercase;
-        font-size: 13px;
-        font-weight: 700;
-        margin-bottom: 12px;
-        display: inline-block;
+        color: #001B59;
+        font-size: 22px;
+        font-weight: 600;
     }
+    @include primary-button; 
+    .howItWorks-item{
+        border-radius: 16px;
+        border: 2px solid var(--primary-color-1, #E6F5FF);
+        background: linear-gradient(135deg, #F2FAFF 0%, rgba(244, 251, 255, 0.00) 100%);
+        box-shadow: 1px 1px 4px 0px rgba(24, 119, 242, 0.04) inset; 
+        padding: 32px 30px;
+        margin-top: 10px;
+        @media (max-width: 768px) {
+            margin-top: 16px;
+        }
+        h5{
+            font-size: 20px; 
+            font-weight: 600;
+            color: $primary-text-color; 
+            margin-top: 10px;
+            @media (max-width: 768px) {
+                font-size: 16px;
+            }
+        }
+        h4{
+            font-size: 20px; 
+            font-weight: 600;
+            color: $primary-text-color; 
+            margin-top: 10px; 
+        }
+        p{
+            font-size: 14px;
+            color: $primary-text-color; 
+        }
+        @include checked-list-items;
+    }
+    .surveyThemes{
+        border-radius: 16px;
+        border: 1px solid rgba(56, 158, 13, 0.16);
+        background: rgba(56, 158, 13, 0.04);
+        padding: 24px;
+        ul.list-unstyled{
+            margin-bottom: 0px; 
+            li{
+                display: flex;
+                align-items: flex-start;
+                font-size: 15px;
+                color: $primary-text-color;
+                margin-bottom: 10px;}
+            }
+    }
+     
     @include title;
     
     @include primary-button; 
@@ -488,7 +533,7 @@ header{
             margin: 20px -60px !important;
             border-radius: 0px;
         }
-    }
+    } 
     @media (max-width: 768px) { 
         padding: 40px 0px;
         padding-top: 10px;
